@@ -1,0 +1,84 @@
+/* ==================== Global Setup ====================*/
+* {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Green: hsl(75, 94%, 57%);
+  --Light-Grey: hsl(0, 0%, 20%);
+  --Mid-Grey: hsl(0, 0%, 12%);
+  --Dark-Grey: hsl(0, 0%, 8%);
+}
+
+/* ==================== Design ====================*/
+body {
+  background-color: var(--Dark-Grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.Container {
+  background-color: var(--Mid-Grey);
+  min-width: 20em;
+  min-height: 25em;
+  padding: 25px 15px 5px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Container img {
+  border-radius: 50%;
+  max-width: 6em;
+}
+
+.Container h1 {
+  color: var(--White);
+  font-weight: 400;
+  font-size: 25px;
+  margin: 20px 0 10px;
+}
+
+.Container h4 {
+  color: var(--Green);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.Container p {
+  color: var(--White);
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.Container ul li a {
+  background-color: var(--Light-Grey);
+  color: var(--White);
+  display: block;
+  margin-bottom: 20px;
+  width: 17em;
+  padding: 13px 0;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.Container ul li a:hover {
+  background-color: var(--Green);
+  color: var(--Dark-Grey);
+  cursor: pointer;
+  transition: 0.5s;
+}
